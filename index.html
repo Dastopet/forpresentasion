@@ -480,13 +480,13 @@
                 <div class="image-placeholder" style="border: none; height: auto; background: transparent; padding: 0;">
                     <div style="display: grid; grid-template-columns: 1fr; width: 100%;">
                         
-                        <!-- Bingkai Vertikal Gaya Layar HP -->
+                        <!-- Bingkai Luar -->
                         <div style="background-color: #141414; border: 1px solid #222; border-radius: 12px; padding: 10px; text-align: center; display: flex; flex-direction: column; min-height: 400px; position: relative; overflow: hidden;">
                             
-                            <!-- Wadah Gambar Vertikal -->
+                            <!-- Wadah Dalam (Menjaga Gambar Tetap Utuh Tanpa Terpotong) -->
                             <div style="width: 100%; height: 340px; background: #1a1a1a; border-radius: 8px; position: relative; overflow: hidden;">
-                                <!-- Menggunakan gambar beranda.jpeg dengan object-fit: cover agar proporsional di layar HP -->
-                                <img src="asset/beranda.png" alt="Tampilan UI Antrean Rekomendasi Beranda" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                                <!-- Menggunakan beranda.jpeg dengan 'contain' agar gambar menyesuaikan secara proporsional -->
+                                <img src="asset/beranda.png" alt="Tampilan UI Antrean Rekomendasi Beranda" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 0; left: 0;">
                             </div>
                             
                             <div class="image-title" style="margin-top: 10px; background: #000;">Layout Antarmuka Beranda (Sisi Klien)</div>
@@ -555,13 +555,13 @@
                 <div class="image-placeholder" style="border: none; height: auto; background: transparent; padding: 0;">
                     <div style="display: grid; grid-template-columns: 1fr; width: 100%;">
                         
-                        <!-- Bingkai Vertikal Gaya Layar HP (Satu Gambar) -->
+                        <!-- Bingkai Luar -->
                         <div style="background-color: #141414; border: 1px solid #222; border-radius: 12px; padding: 10px; text-align: center; display: flex; flex-direction: column; min-height: 400px; position: relative; overflow: hidden;">
                             
-                            <!-- Wadah Gambar Vertikal -->
+                            <!-- Wadah Dalam (Menjaga Gambar Utuh Berkat object-fit: contain) -->
                             <div style="width: 100%; height: 340px; background: #1a1a1a; border-radius: 8px; position: relative; overflow: hidden;">
-                                <!-- Menggunakan satu gambar history.jpeg dengan object-fit: cover -->
-                                <img src="asset/history.png" alt="Tampilan Layar Riwayat Klien" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                                <!-- Menggunakan history.jpeg dengan 'contain' agar gambar melebar Anda mengecil secara proporsional tanpa terpotong -->
+                                <img src="asset/history.png" alt="Tampilan Layar Riwayat Klien" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 0; left: 0;">
                             </div>
                             
                             <div class="image-title" style="margin-top: 10px; background: #000;">State Antarmuka Riwayat Aktivitas</div>
